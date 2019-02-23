@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_orion"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.avaneesh.cityguide.Orion">
+
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/orien"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:text="Orion Mall is part of a premium integrated enclave known as Brigade Gateway which houses World Trade Center, Sheraton Grand Hotel,Columbia Asia Hospital apart from the mall in its premises.Orion mall has 4 floors of retail space which includes shopping zones, multiplex, Food and Dining including lakeside cafes and bowling and gaming zones."
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_below="@+id/imageView11"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/button9"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp"
+        android:layout_marginStart="35dp"
+        android:onClick="gotoMaps"
+        android:text="Goto Maps" />
+
+    <Button
+        android:id="@+id/button10"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/button9"
+        android:layout_alignEnd="@+id/imageView11"
+        android:layout_marginEnd="20dp"
+        android:onClick="gotoVirtual"
+        android:text="Virtual View" />
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_basavana_gudi"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.avaneesh.cityguide.BasavanaGudi">
+
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/basava"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView7"
+        android:layout_marginTop="18dp"
+        android:text="Is situated in Bull Temple Road, Basavanagudi, area of South Bengaluru, part of the largest city of the Indian state of Karnataka. The Hindu temple is inside a park called Bugle Rock.Every year on the last Monday and Tuesday of the Hindu month of Karthika Maasa a groundnut fair is held in the temple premises and groundnut is offered to the deity. This fair is known as 'Kadalekaayi Parishe' in local tongue. Groundnut sellers and devotees throng the place during Kadalekaayi Parishe."
+        android:textAppearance="@style/TextAppearance.AppCompat" />
+
+    <Button
+        android:id="@+id/button5"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView11"
+        android:layout_marginStart="15dp"
+        android:onClick="gotoMaps"
+        android:text="Goto Maps" />
+
+    <Button
+        android:id="@+id/button15"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="32dp"
+        android:layout_toEndOf="@+id/button5"
+        android:onClick="gotoCall"
+        android:text="Call Temple" />
+</RelativeLayout>

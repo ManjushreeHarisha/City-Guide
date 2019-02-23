@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_park"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.avaneesh.cityguide.Park">
+
+    <ImageButton
+        android:id="@+id/park_lalbagh"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_gravity="left"
+        android:onClick="gotoLalbagh"
+        android:src="@drawable/park_lalbagh" />
+
+    <ImageButton
+        android:id="@+id/cubbon"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignParentTop="true"
+        android:layout_gravity="left"
+        android:layout_marginStart="34dp"
+        android:layout_toEndOf="@+id/park_lalbagh"
+        android:onClick="gotoCubbon"
+        android:scaleType="matrix"
+        android:src="@drawable/cubbon" />
+
+    <TextView
+        android:id="@+id/textViewLalbagh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/park_lalbagh"
+        android:layout_alignStart="@+id/textViewBannergatta"
+        android:layout_marginStart="13dp"
+        android:text="Lalbagh"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        tools:text="Lalbagh"
+        tools:textColor="@android:color/holo_orange_light" />
+
+    <TextView
+        android:id="@+id/textViewCubbon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/cubbon"
+        android:layout_alignTop="@+id/textViewLalbagh"
+        android:layout_marginEnd="14dp"
+        android:text="Cubbon Park"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@color/colorAccent" />
+
+    <ImageButton
+        android:layout_height="130dp"
+        android:layout_width="130dp"
+        android:layout_gravity="left"
+        android:onClick="gotoBanner"
+        android:src="@drawable/bannerghatta"
+        android:id="@+id/bannergahtta"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewBannergatta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bannerghatta"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_alignBottom="@+id/bannergahtta"
+        android:layout_alignEnd="@+id/bannergahtta" />
+
+    <ImageButton
+        android:id="@+id/jppark"
+        android:layout_width="130dp"
+        android:layout_height="130dp"
+        android:layout_alignStart="@+id/cubbon"
+        android:layout_alignTop="@+id/bannergahtta"
+        android:layout_gravity="left"
+        android:onClick="gotoJpPark"
+        android:src="@drawable/jp_park" />
+
+    <TextView
+        android:id="@+id/textViewJpPark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="JP Park"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:layout_alignBaseline="@+id/textViewBannergatta"
+        android:layout_alignBottom="@+id/textViewBannergatta"
+        android:layout_alignStart="@+id/textViewCubbon"
+        android:layout_marginStart="14dp" />
+
+    <ImageButton
+        android:layout_height="130dp"
+        android:layout_width="130dp"
+        android:layout_gravity="left"
+        android:onClick="gotoSankey"
+        android:src="@drawable/sankeytank"
+        android:id="@+id/sankeytank"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/textViewSankeyTank"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="11dp"
+        android:text="Sankey Tank"
+        android:textAppearance="@style/TextAppearance.AppCompat.Button"
+        android:textColor="@android:color/background_light"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/textViewBannergatta" />
+
+</RelativeLayout>

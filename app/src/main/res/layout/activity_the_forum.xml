@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_the_forum"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.avaneesh.cityguide.TheForum"
+    >
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="250dp"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/theforum"
+        tools:layout_editor_absoluteX="50dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/textView17"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="The Forum is a shopping mall located on Hosur Road in Koramangala,.developed by Prestige Group.  The Forum was Bangalore's first full-fledged mall with a multi-storey book store, 12 cinema halls and other entertainment facilities. The mall is an attraction for tourists. The shopping mall houses 72,000 m2 (780,000 sq ft) of shops over five levels."
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="223dp"
+        android:layout_below="@+id/imageView9"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="42dp" />
+
+    <Button
+        android:id="@+id/button7"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="gotoMaps"
+        android:text="Goto Maps"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="378dp"
+        android:layout_below="@+id/textView17"
+        android:layout_alignStart="@+id/textView17"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="26dp" />
+
+    <Button
+        android:id="@+id/button12"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/button7"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="7dp"
+        android:layout_toEndOf="@+id/button7"
+        android:onClick="gotoVirtual"
+        android:text="Virtual View" />
+</RelativeLayout>

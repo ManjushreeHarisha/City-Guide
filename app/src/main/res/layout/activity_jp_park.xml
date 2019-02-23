@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_jp_park"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.avaneesh.cityguide.JpPark"
+    >
+
+    <TextView
+        android:id="@+id/textViewLalbagh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jayaprakash Narayan Biodiversity Park (JP Park) is on an 85-acre (340,000 m2) site at Mathikere in the north-west area of Bangalore. The park has four lakes, lawns spread over 25 acres (100,000 m2), and over 250 varieties of trees and shrubs can be found there all the time. Select exotic and aquatic species, and a nursery. There is a nature centre, an exhibition plaza, and an amphitheatre. There is a rock garden in the park modelled after the one in Almatti."
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        tools:textColor="?android:attr/colorMultiSelectHighlight"
+        android:layout_above="@+id/map"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="13dp" />
+
+    <Button
+        android:id="@+id/map"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:elevation="0dp"
+        android:onClick="gotoMaps"
+        android:soundEffectsEnabled="true"
+        android:text="Show on Maps"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textColor="@color/common_google_signin_btn_text_dark_default"
+        android:textColorLink="@color/common_google_signin_btn_text_dark_pressed" />
+
+    <Button
+        android:id="@+id/view360"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="gotoVirtualTour"
+        android:text="Virtual Tour" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_above="@+id/textViewLalbagh"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/jp_park2" />.
+</RelativeLayout>
